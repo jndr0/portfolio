@@ -21,15 +21,12 @@ const { title } = Astro.props;
   </head>
   <body class="relative text-black dark:text-white">
     <div
-      class="absolute top-0 bottom-0 z-[-2] min-h-screen w-full bg-neutral-100 dark:bg-neutral-950
-      bg-[radial-gradient(125%_125%_at_50%_10%,#fff_40%,#808080_100%)]
-      dark:bg-[radial-gradient(125%_125%_at_50%_10%,#000_40%,#808080_100%)]"
+      class="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#101820_40%,#7b828a_100%)]"
     >
     </div>
     <Header />
     <slot />
-    <Footer/>
-  
+    <Footer />
   </body>
 </html>
 <style is:global>
